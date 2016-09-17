@@ -14,4 +14,5 @@ public class Address extends BaseModel{
     private String city;
     private String state;
     private String zipCode;
+    private String addressType;
 }
