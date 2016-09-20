@@ -17,6 +17,10 @@ public class BaseModel {
     @NotNull
     private String createdTime;
 
+
+
+    // getters and setters
+
     public long getID() {
         return ID;
     }

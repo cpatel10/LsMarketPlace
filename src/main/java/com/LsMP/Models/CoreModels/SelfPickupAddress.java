@@ -1,38 +1,20 @@
 package com.LsMP.Models.CoreModels;
 
 import com.LsMP.Models.BaseModels.BaseModel;
-import com.sun.istack.internal.NotNull;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
 
 /**
- * Created by annezhao on 9/16/16.
+ * Created by annezhao on 9/17/16.
  */
-@Entity
-public class Address extends BaseModel {
-
-    @NotNull
-    private long userID;
-
+public class SelfPickupAddress extends BaseModel {
     private String Line1;
     private String Line2;
     private String city;
     private String state;
     private String zipCode;
-    private String addressType;
-
+    private String hours;
 
 
     // getters and setters
-
-    public long getUserID() {
-        return userID;
-    }
-
-    public void setUserID(long userID) {
-        this.userID = userID;
-    }
 
     public String getLine1() {
         return Line1;
@@ -74,11 +56,11 @@ public class Address extends BaseModel {
         this.zipCode = zipCode;
     }
 
-    public String getAddressType() {
-        return addressType;
+    public String getHours() {
+        return hours;
     }
 
-    public void setAddressType(String addressType) {
-        this.addressType = addressType;
+    public void setHours(String hours) {
+        this.hours = hours;
     }
 }
